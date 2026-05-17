@@ -50,10 +50,10 @@ export default function Hero() {
       ref={sectionRef}
       className="relative h-screen w-full overflow-hidden"
     >
-      <div className="relative z-10 flex h-full flex-col justify-between p-8 md:p-16">
+      <div className="relative z-10 flex h-full flex-col justify-between px-8 pb-8 pt-28 md:px-16 md:pb-16 md:pt-32">
         <div>
           <p className="text-xs uppercase tracking-[0.3em] opacity-60">
-            Nescafé · 2026
+            Edición 2026
           </p>
           <h1 className="mt-4 max-w-2xl text-5xl font-bold leading-tight md:text-7xl">
             Cada taza

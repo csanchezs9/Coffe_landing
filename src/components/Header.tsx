@@ -15,9 +15,25 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-5 md:px-16">
         <Link
           href="/"
-          className="text-sm font-bold uppercase tracking-[0.4em]"
+          aria-label="Nescafé"
+          className="logo-wrap group relative flex items-center gap-3"
         >
-          Nescafé
+          <span className="relative inline-block h-10 w-10">
+            <span className="steam steam-1" />
+            <span className="steam steam-2" />
+            <span className="steam steam-3" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/coffe.png"
+              alt=""
+              width={40}
+              height={40}
+              className="logo-mark h-10 w-10 object-contain transition-transform duration-500 group-hover:scale-105"
+            />
+          </span>
+          <span className="text-sm font-bold uppercase tracking-[0.4em]">
+            Nescafé
+          </span>
         </Link>
         <nav className="hidden gap-8 text-xs uppercase tracking-[0.3em] md:flex">
           {NAV.map((item) => (

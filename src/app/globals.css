@@ -17,3 +17,43 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
+
+@keyframes logo-in {
+  0%   { opacity: 0; transform: translateY(-6px) scale(0.92); }
+  100% { opacity: 1; transform: translateY(0)    scale(1); }
+}
+
+.logo-mark {
+  animation: logo-in 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes steam-rise {
+  0%   { opacity: 0; transform: translate(-50%, 0) scaleX(1); }
+  20%  { opacity: 0.55; }
+  60%  { opacity: 0.35; }
+  100% { opacity: 0; transform: translate(-50%, -22px) scaleX(0.4); }
+}
+
+.steam {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  width: 4px;
+  height: 14px;
+  border-radius: 9999px;
+  background: linear-gradient(to top, rgba(244,236,226,0) 0%, rgba(244,236,226,0.85) 50%, rgba(244,236,226,0) 100%);
+  filter: blur(2px);
+  opacity: 0;
+  transform: translate(-50%, 0);
+  pointer-events: none;
+}
+
+.logo-wrap:hover .steam,
+.logo-wrap:focus-visible .steam {
+  animation: steam-rise 1.6s ease-in-out infinite;
+}
+
+.logo-wrap:hover .steam-2,
+.logo-wrap:focus-visible .steam-2 { animation-delay: 0.35s; left: 38%; }
+.logo-wrap:hover .steam-3,
+.logo-wrap:focus-visible .steam-3 { animation-delay: 0.7s;  left: 62%; }
