@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Outfit, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import Providers from '@/components/Providers';
-import Scene from '@/components/Scene';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -35,7 +34,6 @@ export default function RootLayout({
     >
       <body className="min-h-full bg-[var(--background)] text-[var(--foreground)] font-sans">
         <Providers>
-          <Scene />
           <Header />
           {children}
           <Footer />

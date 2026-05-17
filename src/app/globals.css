@@ -35,6 +35,18 @@ body {
   letter-spacing: -0.02em;
 }
 
+.bean-strip {
+  background-image: url('/coffee-beans.png');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-position: 0 center;
+  animation: bean-drift 80s linear infinite;
+}
+
+@keyframes bean-drift {
+  to { background-position: -1600px center; }
+}
+
 @keyframes logo-in {
   0%   { opacity: 0; transform: translateY(-6px) scale(0.92); }
   100% { opacity: 1; transform: translateY(0)    scale(1); }

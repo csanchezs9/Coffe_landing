@@ -17,7 +17,12 @@ const COLUMNS = [
 
 export default function Footer() {
   return (
-    <footer className="relative z-10 border-t border-white/10 bg-[var(--surface-dark)] text-[var(--surface-dark-text)]">
+    <footer className="relative z-10 bg-[var(--surface-dark)] text-[var(--surface-dark-text)]">
+      <div
+        aria-hidden
+        className="bean-strip h-16 w-full"
+        style={{ transform: 'scaleY(-1)' }}
+      />
       <div className="mx-auto max-w-7xl px-8 py-16 md:px-16">
         <div className="grid gap-12 md:grid-cols-4">
           <div>
