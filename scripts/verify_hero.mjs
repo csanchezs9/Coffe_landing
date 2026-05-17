@@ -30,7 +30,7 @@ const URL = process.env.URL || 'http://localhost:3000';
     }
   }, null, { timeout: 15000 }).catch(() => console.warn('canvas wait timed out'));
 
-  const stops = [0, 0.5, 1.0];
+  const stops = [0, 0.2, 0.5, 0.8, 1.0];
   for (const s of stops) {
     await page.evaluate((p) => {
       const sec = document.querySelector('section');

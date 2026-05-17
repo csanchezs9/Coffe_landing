@@ -47,6 +47,11 @@ body {
   to { background-position: -1600px center; }
 }
 
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-33.3333%); }
+}
+
 @keyframes logo-in {
   0%   { opacity: 0; transform: translateY(-6px) scale(0.92); }
   100% { opacity: 1; transform: translateY(0)    scale(1); }
