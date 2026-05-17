@@ -52,18 +52,26 @@ export default function Hero() {
     >
       <div className="relative z-10 flex h-full flex-col justify-between px-8 pb-8 pt-28 md:px-16 md:pb-16 md:pt-32">
         <div>
-          <p className="text-xs uppercase tracking-[0.3em] opacity-60">
+          <p className="flex items-center gap-3 text-[11px] uppercase tracking-[0.4em] opacity-70">
+            <span className="inline-block h-px w-8 bg-[var(--accent)]" />
             Edición 2026
           </p>
-          <h1 className="mt-4 max-w-2xl text-5xl font-bold leading-tight md:text-7xl">
+          <h1 className="font-display mt-6 max-w-3xl text-6xl font-bold leading-[0.95] md:text-8xl">
             Cada taza
             <br />
-            cuenta una historia
+            <span className="italic text-[var(--accent)]">cuenta</span> una historia
           </h1>
+          <p className="mt-8 max-w-md text-base opacity-75 md:text-lg">
+            Del grano cultivado en altura al ritual diario. Una experiencia que
+            despierta los sentidos.
+          </p>
         </div>
-        <p className="max-w-sm self-end text-right text-sm opacity-60 md:text-base">
-          Desplázate para descubrir el viaje del grano.
-        </p>
+        <div className="flex flex-col items-start gap-4 self-end md:flex-row md:items-center">
+          <p className="max-w-sm text-right text-xs uppercase tracking-[0.3em] opacity-60 md:text-sm">
+            Desplázate para descubrir el viaje del grano
+          </p>
+          <span className="inline-block h-8 w-px bg-[var(--accent)]" />
+        </div>
       </div>
     </section>
   );
